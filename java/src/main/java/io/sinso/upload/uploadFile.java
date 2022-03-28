@@ -18,7 +18,7 @@ public class uploadFile {
             HttpURLConnection conn = (HttpURLConnection) url.openConnection();
             //Please enter your token
             conn.setRequestProperty("Token", "");
-            conn.setRequestProperty("Content-type", "application/x-www-form-urlencoded");
+            conn.setRequestProperty("Content-type", "image/jpg");
             conn.setDoOutput(true);
             conn.setDoInput(true);
             conn.setChunkedStreamingMode(1024 * 1024);

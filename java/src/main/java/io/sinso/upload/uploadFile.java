@@ -10,13 +10,14 @@ public class uploadFile {
         System.out.println(upload());
     }
 
-    public static String  upload() {
+    public static String upload() {
         try {
             String filePath = "io/sinso/upload/1.jpg";
             File file = new File(filePath);
             URL url = new URL("https://api-ap-seoul-1.getway.sinso.io/v1/upload?name=1.jpg");
             HttpURLConnection conn = (HttpURLConnection) url.openConnection();
-            conn.setRequestProperty("token", "b953ebe0ab3c11ecbf08acde48001122");
+            //Please enter your token
+            conn.setRequestProperty("Token", "");
             conn.setRequestProperty("Content-type", "application/x-www-form-urlencoded");
             conn.setDoOutput(true);
             conn.setDoInput(true);

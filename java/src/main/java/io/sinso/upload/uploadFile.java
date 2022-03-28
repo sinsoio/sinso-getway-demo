@@ -12,7 +12,7 @@ public class uploadFile {
 
     public static String  upload() {
         try {
-            String filePath = "io/sinso/upload/file.txt";
+            String filePath = "io/sinso/upload/1.jpg";
             File file = new File(filePath);
             URL url = new URL("https://api-ap-seoul-1.getway.sinso.io/v1/upload?name=1.jpg");
             HttpURLConnection conn = (HttpURLConnection) url.openConnection();

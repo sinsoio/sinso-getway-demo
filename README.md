@@ -1,1 +1,1 @@
-# sinso-getway-sdk
+# sinso-getway-demo
